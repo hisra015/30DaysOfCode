@@ -23,17 +23,19 @@ h1 {
     text-align: center;
 }
 
+input[type="text"], button, ul {
+    width: 100%;  /* Ensure full width within the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
 input[type="text"] {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-bottom: 10px;
     border: 2px solid #bdbdbd;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 button {
-    width: 100%;
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -50,17 +52,31 @@ button:hover {
 ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin: 0; /* Remove default margin */
 }
 
 ul li {
+    margin-top: 10px;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #f9f9f9;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: background-color 0.3s;
+}
+
+.delete-icon {
+    cursor: pointer;
+    padding: 0 10px;
+    visibility: hidden;  /* Hide by default */
 }
 
 ul li:hover {
     background-color: #f1f1f1;
+}
+
+ul li:hover .delete-icon {
+    visibility: visible;  /* Show on hover */
 }
