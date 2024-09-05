@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Checker</title>
+  <!-- Importing Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #result {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+
+      .center-align {
+        text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h4 class="center-align">Palindrome Checker</h4>
+
+    <div class="input-field">
+      <input id="textInput" type="text" placeholder="Enter a word or phrase" class="validate">
+    </div>
+
+    <div class="center-align">
+      <button class="btn waves-effect waves-light green" onclick="checkPalindrome()">Check</button>
+    </div>
+
+    <div id="result" class="center-align"></div>
+  </div>
+
+  <!-- JavaScript Logic -->
+  <script>
+    function checkPalindrome() {
+      const inputText = document.getElementById("textInput").value.toLowerCase();
+      const cleanedText = inputText.replace(/[^a-z0-9]/g, '');  // Clean non-alphanumeric characters
+      const reversedText = cleanedText.split('').reverse().join('');
+      const resultElement = document.getElementById("result");
+
+      if (cleanedText === reversedText && cleanedText.length > 0) {
+        resultElement.textContent = `"${inputText}" is a palindrome!`;
+        resultElement.style.color = 'green';
+      } else {
+        resultElement.textContent = `"${inputText}" is not a palindrome.`;
+        resultElement.style.color = 'red';
+      }
+    }
+  </script>
+
+  <!-- Importing Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
