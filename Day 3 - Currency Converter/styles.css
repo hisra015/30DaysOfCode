@@ -1,0 +1,18 @@
+/* style.css */
+
+/* Background color for body */
+body {
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+/* Custom styling for the result display */
+#result p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0288d1; /* Deep blue color */
+}
+
+#result p.error {
+    color: red;
+    font-weight: normal;
+}
