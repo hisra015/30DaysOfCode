@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Data Visualizations</title>
+    <!-- Import Materialize CSS for clean styling -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1, h5 {
+            color: #26a69a;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #26a69a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-wrapper teal lighten-1">
+        <div class="container">
+                <a href="#" class="brand-logo">COVID-19 Data Visualizations</a>
+
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="section">
+            <h1 class="center-align">COVID-19 Global Data Visualizations</h1>
+            <p class="flow-text center-align">These visualizations present global COVID-19 confirmed cases over time and the top 10 countries with the most confirmed cases. Data sourced from the Johns Hopkins University dataset.</p>
+        </div>
+
+        <!-- Global Cases Plot Section -->
+        <div class="section">
+            <h5>Global COVID-19 Confirmed Cases Over Time</h5>
+            <div class="img-container">
+                <img src="visualizations/global_cases.png" alt="Global COVID-19 Confirmed Cases Over Time">
+            </div>
+            <p>This chart shows the cumulative confirmed COVID-19 cases worldwide from the start of the pandemic to the most recent date.</p>
+        </div>
+
+        <!-- Top 10 Countries Plot Section -->
+        <div class="section">
+            <h5>Top 10 Countries by Total Confirmed COVID-19 Cases</h5>
+            <div class="img-container">
+                <img src="visualizations/top_10_countries.png" alt="Top 10 Countries by Confirmed COVID-19 Cases">
+            </div>
+            <p>This bar chart highlights the 10 countries with the highest number of confirmed COVID-19 cases.</p>
+        </div>
+
+        <!-- GitHub Link -->
+        <div class="section center-align">
+            <a href="https://github.com/hisra015/30DaysOfCode/tree/main/Day%206%20-%20Data%20Dashboard" class="waves-effect waves-light btn teal lighten-1">
+                <i class="material-icons left"></i> View Code on GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <foote
