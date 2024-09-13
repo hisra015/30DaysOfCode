@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockerized Flask App</title>
+    <!-- Materialize CSS for styling -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1, h5 {
+            color: #26a69a;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #26a69a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-wrapper teal lighten-1">
+        <div class="container">
+            <a href="#" class="brand-logo">Dockerized Flask App</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="center-align">How to Run a Flask App in Docker</h1>
+        <p class="flow-text center-align">This guide shows you how to build and run a Flask web app inside a Docker container. Below are the Docker setup instructions and screenshots of the app running.</p>
+
+        <!-- Docker Instructions Section -->
+        <div class="section">
+            <h5>Steps to Run the Dockerized Flask App</h5>
+            <ol>
+                <li><strong>Clone the Repository:</strong> <code>git clone https://github.com/yourusername/flask-docker-app.git</code></li>
+                <li><strong>Navigate to the project folder:</strong> <code>cd flask-docker-app</code></li>
+                <li><strong>Build the Docker image:</strong> <code>docker build -t flask-docker-app .</code></li>
+                <li><strong>Run the container:</strong> <code>docker run -p 5000:5000 flask-docker-app</code></li>
+                <li>Visit <strong>http://localhost:5000</strong> in your browser to see the Flask app in action!</li>
+            </ol>
+        </div>
+
+        <!-- Screenshot Section -->
+        <div class="section">
+            <h5>Screenshot of the Running Flask App</h5>
+            <div class="img-container">
+                <img src="screenshots/flask_app_screenshot.png" alt="Flask app running in Docker">
+            </div>
+        </div>
+
+        <!-- GitHub Link -->
+        <div class="section center-align">
+            <a href="https://github.com/yourusername/flask-docker-app" class="waves-effect waves-light btn teal lighten-1">
+                <i class="material-icons left">code</i> View Code on GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Created by <a href="https://github.com/yourusername" target="_blank">Your Name</a> as part of the 30 Days of Code Challenge.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
