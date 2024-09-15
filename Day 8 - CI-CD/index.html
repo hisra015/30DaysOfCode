@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD with GitHub Actions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f4f4f4; }
+        .container { margin-top: 50px; }
+        h1, h5 { color: #26a69a; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <nav class="nav-wrapper teal lighten-1">
+        <div class="container">
+            <a href="#" class="brand-logo">CI/CD with GitHub Actions</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Setting Up CI/CD with GitHub Actions</h1>
+        <p>This project demonstrates how to set up continuous integration with GitHub Actions and pytest for a Python project.</p>
+
+        <h5>GitHub Actions Workflow</h5>
+        <img src="screenshots/workflow_success.png" alt="CI success screenshot">
+        <p>This screenshot shows the successful execution of the CI pipeline.</p>
+
+        <h5>Running pytest Tests</h5>
+        <img src="screenshots/test_results.png" alt="pytest test results">
+        <p>The tests are automatically run every time code is pushed to the repository.</p>
+
+        <a href="https://github.com/yourusername/ci_cd_example" class="waves-effect waves-light btn teal lighten-1">View Code on GitHub</a>
+    </div>
+
+    <footer class="teal lighten-1">
+        <div class="container">
+            <p>Created as part of the 30 Days of Code Challenge</p>
+        </div>
+    </footer>
+</body>
+</html>
