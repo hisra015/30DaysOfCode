@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform EC2 Instance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f4f4f4; }
+        .container { margin-top: 50px; }
+        h1, h5 { color: #26a69a; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <nav class="nav-wrapper teal lighten-1">
+        <div class="container">
+            <a href="#" class="brand-logo">Terraform EC2 Instance</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Provisioning an AWS EC2 Instance with Terraform</h1>
+        <p>This project uses Terraform to provision an EC2 instance on AWS. Below are the steps to recreate this setup.</p>
+
+        <h5>Steps to Create the EC2 Instance</h5>
+        <ol>
+            <li>Install Terraform on your machine.</li>
+            <li>Configure your AWS credentials using <code>aws configure</code>.</li>
+            <li>Create the <code>main.tf</code> file with the Terraform configuration.</li>
+            <li>Run <code>terraform init</code> to initialize the project.</li>
+            <li>Run <code>terraform apply</code> to create the EC2 instance.</li>
+            <li>After verification, run <code>terraform destroy</code> to clean up the resources.</li>
+        </ol>
+
+        <h5>Screenshot of the EC2 Instance</h5>
+        <img src="screenshot.png" alt="EC2 instance screenshot">
+
+        <a href="https://github.com/yourusername/terraform-ec2" class="waves-effect waves-light btn teal lighten-1">View Code on GitHub</a>
+    </div>
+
+    <footer class="teal lighten-1">
+        <div class="container">
+            <p>Created by <a href="https://github.com/hisra015" target="_blank">Hamza Israr</a> as part of the 30 Days of Code Challenge.</p>
+        </div>
+    </footer>
+</body>
+</html>
