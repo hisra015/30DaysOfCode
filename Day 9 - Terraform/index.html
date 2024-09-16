@@ -4,45 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terraform EC2 Instance</title>
+    <!-- Minimal CSS styling with black theme -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f4f4f4; }
-        .container { margin-top: 50px; }
-        h1, h5 { color: #26a69a; }
-        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px; }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1, h5 {
+            color: #ffffff;
+            text-align: center;
+        }
+        .img-container {
+            text-align: center;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #000000;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        a.btn {
+            background-color: #000000;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+        a.btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
     </style>
 </head>
 <body>
-    <nav class="nav-wrapper teal lighten-1">
+
+    <!-- Navbar -->
+    <nav>
         <div class="container">
             <a href="#" class="brand-logo">Terraform EC2 Instance</a>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <div class="container">
         <h1>Provisioning an AWS EC2 Instance with Terraform</h1>
-        <p>This project uses Terraform to provision an EC2 instance on AWS. Below are the steps to recreate this setup.</p>
+        <p>This guide documents how I used Terraform to provision an EC2 instance on AWS. Below are the detailed steps and screenshots of the process.</p>
 
-        <h5>Steps to Create the EC2 Instance</h5>
-        <ol>
-            <li>Install Terraform on your machine.</li>
-            <li>Configure your AWS credentials using <code>aws configure</code>.</li>
-            <li>Create the <code>main.tf</code> file with the Terraform configuration.</li>
-            <li>Run <code>terraform init</code> to initialize the project.</li>
-            <li>Run <code>terraform apply</code> to create the EC2 instance.</li>
-            <li>After verification, run <code>terraform destroy</code> to clean up the resources.</li>
-        </ol>
+        <!-- Instructions Section -->
+        <div class="section">
+            <h5>Steps to Create the EC2 Instance</h5>
+            <ol>
+                <li>Install Terraform and configure AWS CLI credentials.</li>
+                <li>Create a `main.tf` file with the necessary Terraform configuration.</li>
+                <li>Run <code>terraform init</code> to initialize the project.</li>
+                <li>Run <code>terraform apply</code> to create the EC2 instance.</li>
+                <li>Verify the instance via the AWS console or CLI.</li>
+                <li>Run <code>terraform destroy</code> to clean up the resources.</li>
+            </ol>
+        </div>
 
-        <h5>Screenshot of the EC2 Instance</h5>
-        <img src="screenshot.png" alt="EC2 instance screenshot">
+        <!-- Screenshot Section -->
+        <div class="section">
+            <h5>Screenshot of the EC2 Instance</h5>
+            <div class="img-container">
+                <img src="screenshot.png" alt="Screenshot of the EC2 instance">
+            </div>
+        </div>
 
-        <a href="https://github.com/yourusername/terraform-ec2" class="waves-effect waves-light btn teal lighten-1">View Code on GitHub</a>
+        <!-- GitHub Link -->
+        <div class="section center-align">
+            <a href="https://github.com/hisra015/30DaysOfCode/tree/main/Day%209%20-%20Terraform" class="btn">View Code on GitHub</a>
+        </div>
     </div>
 
-    <footer class="teal lighten-1">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-            <p>Created by <a href="https://github.com/hisra015" target="_blank">Hamza Israr</a> as part of the 30 Days of Code Challenge.</p>
+            <p>Created by <a href="https://github.com/hisra015" target="_blank">Hamza</a> as part of the 30 Days of Code Challenge.</p>
         </div>
     </footer>
+
 </body>
 </html>
