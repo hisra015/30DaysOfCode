@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",  // Use ESNext or ES6 for module syntax
+    "target": "ES6",     // Target modern JavaScript for the browser
+    "outDir": "./dist",  // Output directory for compiled JavaScript
+    "strict": true,
+    "esModuleInterop": true, // Enable ES module interop
+    "moduleResolution": "node",  // Resolve modules from node_modules
+    "skipLibCheck": true
+  }
+}
