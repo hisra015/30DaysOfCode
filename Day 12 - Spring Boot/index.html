@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Book API Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .instructions {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #b0b0b0;
+        }
+
+        img {
+            width: 50%; /* Set the width to 50% of the container */
+            max-width: 600px; /* Ensure the images do not exceed 600px in width */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #333;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            color: #888;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Spring Boot Book API</h1>
+
+        <div class="instructions">
+            This is a demonstration of my <strong>Spring Boot Book Management API</strong>.<br>
+            The API allows users to create, read, update, and delete book records.<br><br>
+            <ol style="text-align: left; display: inline-block; color: #b0b0b0;">
+                <li>Start the Spring Boot server by running <code>mvn spring-boot:run</code>.</li>
+                <li>Use Postman or cURL to send a <code>POST</code> request to <code>http://localhost:8080/api/books</code> with the book details.</li>
+                <li>Check that the book was added successfully by sending a <code>GET</code> request to <code>/api/books</code>.</li>
+            </ol>
+        </div>
+
+        <!-- Screenshot of adding a book via Postman -->
+        <h2>1. Adding a Book via Postman</h2>
+        <img src="Postman.png" alt="Screenshot of adding a book via Postman">
+
+        <!-- Screenshot of the localhost showing the new book -->
+        <h2>2. Viewing the Added Book on localhost</h2>
+        <img src="Localhost.png" alt="Screenshot of the new book on localhost">
+
+
+        <p class="instructions">
+            The full source code is available on my <a href="https://github.com/your-username/repo-name" target="_blank">GitHub repository</a>.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2024 Hamza Israr | <a href="https://github.com/hisra015" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+</html>
