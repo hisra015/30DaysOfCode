@@ -1,0 +1,3 @@
+C:\Users\htisr\Documents\GitHub\30DaysOfCode\Day 14 - Virtual Post-It Notes\VirtualPostItNotes\obj\Debug\net6.0-windows\VirtualPostItNotes.csproj.AssemblyReference.cache
+C:\Users\htisr\Documents\GitHub\30DaysOfCode\Day 14 - Virtual Post-It Notes\VirtualPostItNotes\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\htisr\Documents\GitHub\30DaysOfCode\Day 14 - Virtual Post-It Notes\VirtualPostItNotes\obj\Debug\net6.0-windows\VirtualPostItNotes_MarkupCompile.cache

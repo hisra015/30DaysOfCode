@@ -1,0 +1,13 @@
+﻿<Window x:Class="VirtualPostItNotes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="NoteContent" Width="200" Height="30" PlaceholderText="Enter note here"/>
+            <DatePicker x:Name="ReminderTime" Width="200" />
+            <Button Content="Create Note" Click="CreateNote"/>
+            <ItemsControl x:Name="NotesPanel"/>
+        </StackPanel>
+    </Grid>
+</Window>
