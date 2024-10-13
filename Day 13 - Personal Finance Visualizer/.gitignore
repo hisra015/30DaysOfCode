@@ -6,10 +6,6 @@ logs
 *.log
 npm-debug.log*
 
-# Ignore build output (if using Webpack, Vite, or similar)
-dist/
-build/
-
 # Ignore TypeScript cache
 *.tsbuildinfo
 
